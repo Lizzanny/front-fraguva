@@ -8,7 +8,7 @@
                         <img src="assets/Icon/user.png" class="img-fluid" alt="">
                         <h1 class="text-dark">Login</h1>
                     </div>
-                    <form action="">
+                    <form @submit.prevent = "handleSubmit">
                         <div class="p-4">
                             <div class="input-group mb-3">
                                 <span class="input-group-text"><i class="uil uil-user"></i></span>
@@ -20,7 +20,7 @@
                                 <input type="password" class="form-control" placeholder="Contraseña"
                                     id="txtpass" v-model="signin.password">
                             </div>
-                            <button class="btn btn-outline-secondary text-center mt-2" type="button" @click="iniciar">
+                            <button class="btn btn-outline-secondary text-center mt-2" type="submit">
                                 Iniciar Sesión
                             </button>
                             <p class="text-center mt-5">¿Tienes problemas? comunicate con el administrador para acceder</p>
@@ -44,16 +44,19 @@ export default {
         }
     },
     methods:{
-        iniciar(){
+        setUserLocalStorage(user){
+            const usuario = JSON.stringify(user);
+            localStorage.setItem('user', usuario);
+        },
+        handleSubmit(){
             console.log('iniciar sesion');
             this.axios.post('/users/login', this.signin).then(({data, status})=>{
                 if(status===200){
                     window.location.href="/interior";
+                   this.setUserLocalStorage(data);
                 }
-            });
-           /*  this.axios.get('/key').then((resp)=>{
-                console.log(resp);
-            });  */
+            }); 
+         
         }
     }
 }

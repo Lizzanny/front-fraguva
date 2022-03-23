@@ -20,14 +20,21 @@
                                 Servicios
                             </router-link>
                         </li>
-                        <li class="nav-item" v-show="usuario.islogueado">
-                            <router-link to="/login" class="nav-link" @click='login'>
+                        <li class="nav-item"  v-show="usuario.name==''">
+                            <router-link to="/login" class="nav-link">
                                 Log In
                             </router-link>
                         </li>
-                        <li class="nav-item" v-show="!usuario.islogueado">
-                           ghjklñ
+                        <li class="nav-item dropdown" v-show="usuario.name!=''">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                {{usuario.name}}
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <li><hr class="dropdown-divider"></li>
+                              <li><a class="dropdown-item" href="#" @click="cerrarSesion">Log Out</a></li>
+                            </ul>
                         </li>
+                        
                     </ul>
                 </div>
             </div>
@@ -36,14 +43,28 @@
 
 </template>
 <script>
-import { mapState, mapMutations } from 'vuex'
 export default {
-    computed:{
-        ...mapState(['usuario']),
-    },
-    methods:{
-        ...mapMutations(['login'])
-    }
+  data(){
+      return {
+        usuario:{
+            name:""
+        }
+      }
+  },
+  methods:{
+      getDataUser(){
+        this.usuario = JSON.parse(localStorage.getItem("user"));
+      },
+      cerrarSesion(){
+        console.log("cerrar sesion");
+        //vaciar local storage
+        //localStorage.removeItem('user');
+
+      }
+  },
+  mounted(){
+      this.getDataUser();
+  }
 }
 </script>
 <style scoped>
