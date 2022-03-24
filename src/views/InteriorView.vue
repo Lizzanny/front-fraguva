@@ -11,4 +11,8 @@ export default {
     .inicial{
         height: 100vh;
     }
+    .inicial{
+        background-color: black;
+        margin-top: -18em;
+    }
 </style>

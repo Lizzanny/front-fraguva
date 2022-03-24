@@ -8,7 +8,7 @@
                         <img src="assets/Icon/user.png" class="img-fluid" alt="">
                         <h1 class="text-dark">Login</h1>
                     </div>
-                    <form @submit.prevent = "handleSubmit">
+                    <form @submit.prevent = "login">
                         <div class="p-4">
                             <div class="input-group mb-3">
                                 <span class="input-group-text"><i class="uil uil-user"></i></span>
@@ -20,9 +20,14 @@
                                 <input type="password" class="form-control" placeholder="Contraseña"
                                     id="txtpass" v-model="signin.password">
                             </div>
-                            <button class="btn btn-outline-secondary text-center mt-2" type="submit">
+                            <button class="btn btn-outline-secondary text-center mt-2" type="submit" v-show="!loading">
                                 Iniciar Sesión
                             </button>
+                            
+                            <div class="spinner-border" role="status" v-show="loading">
+                              <span class="visually-hidden">Loading...</span>
+                            </div>
+                            
                             <p class="text-center mt-5">¿Tienes problemas? comunicate con el administrador para acceder</p>
                         </div>
                     </form>
@@ -35,27 +40,41 @@
 <script>
 
 export default {
+    name:'Login',
     data(){
         return {
             signin:{
                 username:null,
                 password:null
-            }
+            },
+            loading:false
         }
     },
     methods:{
+        showAlert() {
+          // Use sweetalert2
+          this.$swal({
+              position: 'top-end',
+              icon: 'warning',
+              title: 'Usuario o contraseña incorrectos',
+              showConfirmButton: false,
+              timer: 1500
+        });
+        },
         setUserLocalStorage(user){
             const usuario = JSON.stringify(user);
             localStorage.setItem('user', usuario);
         },
-        handleSubmit(){
-            console.log('iniciar sesion');
+        login(){ 
+            this.loading=true;
             this.axios.post('/users/login', this.signin).then(({data, status})=>{
                 if(status===200){
                     window.location.href="/interior";
-                   this.setUserLocalStorage(data);
+                    this.setUserLocalStorage(data);
                 }
-            }); 
+            }).catch((error)=>this.showAlert()); 
+            
+            this.loading=false;
          
         }
     }

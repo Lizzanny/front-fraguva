@@ -58,8 +58,9 @@ export default {
       cerrarSesion(){
         console.log("cerrar sesion");
         //vaciar local storage
-        //localStorage.removeItem('user');
-
+        localStorage.removeItem('user');
+        window.location.href="/interior";
+        //this.$router.push('/')
       }
   },
   mounted(){
