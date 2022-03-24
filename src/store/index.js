@@ -3,14 +3,18 @@ import { createStore } from "vuex";
 export default createStore({
   state: {
     usuario: {
-      user_id: "0",
-      nombre: "",
-      islogueado: true,
+      isAuthenticated: false,
+      username: "",
+      user_id: "",
     },
   },
   mutations: {
-    login(state) {
-      state.usuario.islogueado = false;
+    setAuthenticated(state, value) {
+      state.usuario.isAuthenticated = value;
+    },
+    setUserData(state, id, username) {
+      state.usuario = username;
+      state.user_id = id;
     },
   },
   actions: {},

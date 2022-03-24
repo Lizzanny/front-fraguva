@@ -1,81 +1,124 @@
 <template>
-  <div class="container-fluid">
-        <div class="row" id="servicios-top">
-            <div class="col-2 col-sm-3 col-md-4 col-lg-5 col-xl-5"></div>
-            <div class="col-10 col-sm-9 col-md-8 col-lg-7 col-xl-7 servicios" >
-                <h1 class="titulo-servicio">SERVICIOS</h1>
-                <ul class="medios-bordes font-item" id="list-services">
-                    <li class="list-servicio">ADMINISTRACIÓN DE CONTRATOS PETROLEROS</li>
-                    <li class="list-servicio">PLANEACIÓN ESTRATÉGICA DE EMPRESAS</li>
-                    <li class="list-servicio">ADMINISTRACIÓN Y MEJORA DE PROCESOS</li>
-                    <li class="list-servicio">APOYO PARA LA EMISIÓN DE OPINIONES TÉCNICAS EN MATERIA PETROLERA</li>
-                    <li class="list-servicio">SEGUIMIENTO DE LAS ACTIVIDADES PETROLERAS</li>
-                    <li class="list-servicio">EVALUACIÓN DEL CUMPLIMIENTO CONTRACTUAL</li>
-                    <li class="list-servicio">CREACIÓN DE OPORTUNIDADES ESTRATÉGICAS PARA LA MEJORA DE NEGOCIOS</li>
-                    <li class="list-servicio">SOPORTE PARA LA ATENCIÓN AL CUMPLIMIENTO TÉCNICO-REGULATORIO DE EXPLORACIÓN Y EXTRACCIÓN</li>
-                    <li class="list-servicio">CUMPLIMIENTO EN LA ENTREGA DE INFORMACIÓN AL CNIH</li>
-                    <li class="list-servicio">CAPACITACIÓN DEL PERSONAL DE LAS EMPRESAS</li>
+  <div class="servicios container-fluid" id="servicios-top">
+    
+        <div class="row justify-content-evenly">
+            <div class="col-4 d-none d-sm-block"></div>
+            <div class="col-4 d-none d-sm-block mt-15 pt-4 pb-4 bgServicios">
+                <p class="tituloServicios">SERVICIOS</p>
+                <ul class="medios-bordes font-item textoServicios">
+                    <li class="m-3">ADMINISTRACIÓN DE CONTRATOS PETROLEROS</li>
+                    <li class="m-3">PLANEACIÓN ESTRATÉGICA DE EMPRESAS</li>
+                    <li class="m-3">ADMINISTRACIÓN Y MEJORA DE PROCESOS</li>
+                    <li class="m-3">APOYO PARA LA EMISIÓN DE OPINIONES TÉCNICAS EN MATERIA
+                        PETROLERA</li>
+                    <li class="m-3">SEGUIMIENTO DE LAS ACTIVIDADES PETROLERAS</li>
+                    <li class="m-3">EVALUACIÓN DEL CUMPLIMIENTO CONTRACTUAL</li>
+                    <li class="m-3">CREACIÓN DE OPORTUNIDADES ESTRATÉGICAS PARA LA MEJORA DE
+                        NEGOCIOS</li>
+                    <li class="m-3">SOPORTE PARA LA ATENCIÓN AL CUMPLIMIENTO
+                        TÉCNICO-REGULATORIO
+                        DE EXPLORACIÓN Y EXTRACCIÓN</li>
+                    <li class="m-3">CUMPLIMIENTO EN LA ENTREGA DE INFORMACIÓN AL CNIH</li>
+                    <li class="m-3">CAPACITACIÓN DEL PERSONAL DE LAS EMPRESAS</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row" >
+            <div class="col d-block d-sm-none bgServicios pt-4 pb-4 ml-4 mr-4 ">
+                <p class="tituloServicios">SERVICIOS</p>
+                <ul class="medios-bordes font-item textoServicios">
+                    <li class="m-2">ADMINISTRACIÓN DE CONTRATOS PETROLEROS</li>
+                    <li class="m-2">PLANEACIÓN ESTRATÉGICA DE EMPRESAS</li>
+                    <li class="m-2">ADMINISTRACIÓN Y MEJORA DE PROCESOS</li>
+                    <li class="m-2">APOYO PARA LA EMISIÓN DE OPINIONES TÉCNICAS EN MATERIA
+                        PETROLERA</li>
+                    <li class="m-2">SEGUIMIENTO DE LAS ACTIVIDADES PETROLERAS</li>
+                    <li class="m-2">EVALUACIÓN DEL CUMPLIMIENTO CONTRACTUAL</li>
+                    <li class="m-2">CREACIÓN DE OPORTUNIDADES ESTRATÉGICAS PARA LA MEJORA DE
+                        NEGOCIOS</li>
+                    <li class="m-2">SOPORTE PARA LA ATENCIÓN AL CUMPLIMIENTO
+                        TÉCNICO-REGULATORIO
+                        DE EXPLORACIÓN Y EXTRACCIÓN</li>
+                    <li class="m-2">CUMPLIMIENTO EN LA ENTREGA DE INFORMACIÓN AL CNIH</li>
+                    <li class="m-2">CAPACITACIÓN DEL PERSONAL DE LAS EMPRESAS</li>
                 </ul>
             </div>
         </div>
         
-        <div class="row justify-content-center box">
-            <div class="col-10 col-sm-10 col-md-10 col-lg-10 col-xl-10"  style="background: #fff;">
-                <div class="row d-flex justify-content-center text-center">
-                    <div class="col-4 col-sm-3 col-md-3 col-lg-3 col-xl-3 puntos" id="elaboracion">
-                        <h4 class="puntos-text"><strong class="puntos-title">ELABORACIÓN y acompañamiento de la modificación del plan de desarrollo</strong></h4>
-                    </div>
-                    <div class="col-4 col-sm-3 col-md-3 col-lg-3 col-xl-3 puntos" id="evaluacion">
-                        <h4 class="puntos-text"><strong class="puntos-title">7 EVALUACIONES de cumplimiento contractual</strong></h4>
-                    </div>
-                    <div class="col-4 col-sm-3 col-md-3 col-lg-3 col-xl-3 puntos" id="asesoria">
-                        <h4 class="puntos-text"><strong class="puntos-title">ASESORÍA en diversos temas estratégicos y regulatorios</strong></h4>
-                    </div>
-                </div>
+  
+
+    <div class="container-fluid" id="cuadrito">
+        <div class="row pt-5 mt-5">
+            <div class="col d-none d-sm-block">
+                <img src="../assets/img/imagenes/serviciosEscritorio.png" class="rounded mx-auto d-block imgServicios" alt=""
+                    style="max-width: 70%;">
+            </div>
+            <div class="col d-block d-sm-none pb-5">
+                <img src="../assets/img/imagenes/servciosMobile.png" class="img-fluid" alt="">
             </div>
         </div>
-
-        <div class="row justify-content-center footer" id="servicios-bottom" >
-            <div class="col-11 col-sm-11 col-md-11 col-lg-11 col-xl-11 text-center experiencia">
-                <h2 class="titulo">NUESTRA EXPERIENCIA</h2>
-                <p class="texto">Contamos con la experiencia en la elaboración y acompañamiento en la modificación del plan de desarrollo, así como la asesoría en diversos temas estratégicos y regulatorios.</p>
-            </div>
-    
-            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 clientes">
-                <!-- Set up your HTML -->
-                <div class="row" >
-                    <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3"> 
-                        <img src="../assets/img/imagenes/cliente1.png" alt="">    
-                    </div>
-                    <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3"> 
-                        <img src="../assets/img/imagenes/cliente2.png" alt="">    
-                    </div>
-                    <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3">
-                        <img src="../assets/img/imagenes/cliente3.png" alt="">    
-                    </div>
-                    <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3"> 
-                        <img src="../assets/img/imagenes/cliente4.png" alt="">    
-                    </div>
-                </div>
-                <!--https://owlcarousel2.github.io/OwlCarousel2/-->
-            </div>
-        
-            <div class="col-11 col-sm-11 col-md-11 col-lg-11 col-xl-11 resumen">
-                <p class="texto-r text-center">
-                    Apoyo en el Servicio Integral para Acompañamiento y Prospectiva en el Proceso de Fusión de las Empresas Públicas PETROAMAZONAS y PETROECUADOR; en el Ámbito Organizacional Estratégico.
-                </p>
-            </div>
-        
-            <div class=" col-11 col-sm-12 col-md-12 col-lg-12 col-xl-12 d-flex justify-content-center clientes">
-                <div>
-                    <img src="../assets/img/imagenes/cliente5.png" alt="">
-                </div>
-                <div >
-                    <img src="../assets/img/imagenes/cliente6.png" alt="">
-                </div>
-            </div>
-        </div>     
     </div>
+
+    <div class="container-fluid" id="servicios-bottom">
+        <div class="row text-center pt-5 ">
+            <div class="col-3 d-none d-sm-block"></div>
+            <div class="col-6 estiloExperiencia d-none d-sm-block">
+                <p class="tituloExperiencia">NUESTRA EXPERIENCIA</p>
+                <p class="textoExperiencia">Contamos con la experiencia en la elaboración y acompañamiento en la
+                    modificación
+                    del plan de desarrollo, así como la asesoría en diversos temas estratégicos y regulatorios.</p>
+            </div>
+            <div class="col-3 d-none d-sm-block"></div>
+        </div>
+        <div class="row text-center pt-5 d-block d-sm-none mvexp">
+            <div class="col pt-2 pb-2 mb-3">
+                <p style="color: white; font-size: 30px; font-weight: bold;">NUESTRA EXPERIENCIA</p>
+                <p style="color: white; font-weight: bold;">Contamos con la experiencia en la elaboración y acompañamiento en la
+                    modificación
+                    del plan de desarrollo, así como la asesoría en diversos temas estratégicos y regulatorios.</p>
+            </div>
+
+
+        </div>
+        <div class="row bgClientes">
+            <div class="col-6 col-sm-6 col-md-3 col-lg-3">
+                <img src="../assets/img/imagenes/cliente1.png" alt="">
+            </div>
+            <div class="col-6 col-sm-6 col-md-3 col-lg-3">
+                <img src="../assets/img/imagenes/cliente2.png" alt="">
+            </div>
+            <div class="col-6 col-sm-6 col-md-3 col-lg-3">
+                <img src="../assets/img/imagenes/cliente3.png" alt="">
+            </div>
+            <div class="col-6 col-sm-6 col-md-3 col-lg-3">
+                <img src="../assets/img/imagenes/cliente4.png" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3  d-none d-sm-block"></div>
+            <div class="col-6 textoExperiencia mt-5 text-center estiloExperiencia pt-3 pb-3  d-none d-sm-block">
+                <p>Apoyo en el Servicio Integral para Acompañamiento y Prospectiva en el Proceso de Fusión de las
+                    Empresas Públicas PETROAMAZONAS y PETROECUADOR; en el Ámbito Organizacional Estratégico.</p>
+            </div>
+            <div class="col-3  d-none d-sm-block"></div>
+        </div>
+        <div class="row d-block d-sm-none">
+            <div class="col text-center pt-4 pb-4" style="color: white; font-weight: bold;">
+                <p>Apoyo en el Servicio Integral para Acompañamiento y Prospectiva en el Proceso de Fusión de las
+                    Empresas Públicas PETROAMAZONAS y PETROECUADOR; en el Ámbito Organizacional Estratégico.</p>
+            </div>
+        </div>
+        <div class="row bgClientes">
+            <div class="col">
+                <img src="../assets/img/imagenes/cliente5.png" class="imgClientes rounded mx-auto d-block" alt="">
+            </div>
+            <div class="col">
+                <img src="../assets/img/imagenes/cliente6.png" class="imgClientes rounded mx-auto d-block" alt="">
+            </div>
+        </div>
+       
+    </div>
+</div>
     
 </template>
 
@@ -91,772 +134,285 @@ export default {
 body {
         margin: 0;
         padding: 0;
-    }
-#servicios-top{
-    background-image: url("../assets/img/backgrounds/top.png");
-    background-size:cover;
-    background-repeat: no-repeat;
-    margin-top: -6em;
-}
-
-#servicios-bottom{
-    background-image: url("../assets/img/backgrounds/bottom.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-/*/ `xs` returns only a ruleset and no media query*/
-@include media-breakpoint-only(xs){
-    .img-logo{
-        max-width: 200px;
-    width: 24vw;
-    }
-    .medios-bordes {
-        border-left: 3px solid #fff;
-        border-bottom: 3px solid #fff;
-        padding-left: 0;
-    }
-    .servicios {
-        background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(10,134,135,1) 100%);
-        margin-bottom: 22em;
-        margin-top: 7em;
-    }
-    #list-services::before {/*icono para movil sm*/
-        content: "";
-        display: block;
-        background: url(../assets/img/imagenes/arrow-down-sm.png) no-repeat;
-        width: 30px;
-        height: 30px;
-        float: left;
-        margin-left: -2em;
+        background-color: #003260;
     }
 
-
-    .font-item{
-        color: #fff;
-        list-style:none;
-    } 
-    .list-servicio {/*letras de los servicios*/
-        padding: 4px 4px;
-        font-size: 8pt;
-        font-weight: 500;
-    }
-    .titulo-servicio {/*Titulo del servicio*/
-        color: #fff;
-        font-size: 18pt;
-        font-weight: 500;
-        margin-bottom: 10px;
-    }
-    .puntos {
-        padding: 1em;
-        height: 16vh;
-        margin: 1em;
-        background: linear-gradient(90deg, rgba(159,208,208,1) 0%, rgba(255,255,255,1) 30%, rgba(255,255,255,1) 70%, rgba(159,208,208,1) 100%);
-        width: 33vw;
-    }
-    .puntos-title {
-        font-size: 0.5em;
-    }
-    .puntos-text{
-        margin-top: 0;
-        margin-bottom: 0.5rem;
-        font-weight: 500;
-        line-height: 0.7;
-    }
-    .experiencia {
-        background: linear-gradient(90deg, rgba(0,129,130,1) 0%, rgba(0,0,0,0) 15%, rgba(0,0,0,0) 85%, rgba(0,129,130,1) 100%);
-        padding: 2em 1em 2em 1em;
-        margin: 15em 0 2em 0;
-    }
-    .titulo {
-        color: #fff;
-        font-size: 20pt;
-        font-weight: 600;
-    }
-    .texto {
-        color: #fff;
-        font-size: 12pt;
-        font-weight: 500;
+    
+    .tituloServicios {
+        color: white;
+        font-size: 40px;
+        font-weight: bold;
     }
 
-    .resumen {
-        background: linear-gradient(90deg, rgba(0,129,130,1) 0%, rgba(0,0,0,0) 15%, rgba(0,0,0,0) 85%, rgba(0,129,130,1) 100%);
-        padding: 1em;
-        margin: 1em 0 1em 0;
+    .textoServicios {
+        color: white;
+        font-size: 25px;
     }
-    .texto-r {
-        color: #fff;
-        font-size: 9pt;
-        font-weight: 500;
+
+    .tituloExperiencia {
+        color: white;
+        font-size: 40px;
+        font-weight: bold;
+        margin-top: 50px;
     }
-    img{
+
+    .textoExperiencia {
+        color: white;
+        font-size: 25px;
+        margin-bottom: 50px;
+    }
+
+    .imgClientes {
+        max-width: 300px;
+    }
+
+    .estiloExperiencia {
+        background: rgb(21, 125, 115);
+        background: linear-gradient(90deg, rgba(21, 125, 115, 0.5410539215686274) 0%, rgba(21, 125, 115, 0) 10%, rgba(21, 125, 115, 0) 92%, rgba(21, 125, 115, 0.5410539215686274) 100%);
+            margin-top: 12em;
+    }
+
+    .bgClientes {
+        background: rgb(255, 255, 255);
+        background: radial-gradient(circle, rgba(255, 255, 255, 0.9192051820728291) 87%, rgba(21, 125, 115, 0) 100%);
+    }
+
+    .bgServicios {
+        background: rgb(19, 24, 30);
+        background: linear-gradient(90deg, rgba(19, 24, 30, 0) 46%, rgba(21, 124, 126, 1) 100%);
+            margin-top: 13em;
+            margin-bottom: 24em;
+    }
+
+    .header {
+        display: flex;
+    }
+
+    #menu {
+        text-align: right;
         width: 100%;
-    }
-    .box {
-        margin-top: -10em;
-    z-index: 1;
-    margin-bottom: -11em;
+        justify-content: end;
     }
 
-    .clientes{
-    background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(255,255,255,1) 25%, rgba(255,255,255,1) 75%, rgba(0,0,0,0) 100%);
-    padding: 3em;
-    }
- }
-/*/ `sm` applies to x-small devices (portrait phones, less than 576px)*/
-@media (max-width: 575.98px) { 
-    .img-logo{
-        max-width: 200px;
-    width: 24vw;
-    }
-    .medios-bordes {
-        border-left: 3px solid #fff;
-        border-bottom: 3px solid #fff;
-        padding-left: 0;
-    }
-    .servicios {
-        background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(10,134,135,1) 100%);
-        margin-bottom: 22em;
-        margin-top: 7em;
-    }
-    #list-services::before {/*icono para movil sm*/
-        content: "";
-        display: block;
-        background: url(../assets/img/imagenes/arrow-down-sm.png) no-repeat;
-        width: 30px;
-        height: 30px;
-        float: left;
-        margin-left: -2em;
+    .imgEscritrio {
+        max-width: 80%;
     }
 
-
-    .font-item{
-        color: #fff;
-        list-style:none;
-    } 
-    .list-servicio {/*letras de los servicios*/
-        padding: 4px 4px;
-        font-size: 8pt;
-        font-weight: 500;
-    }
-    .titulo-servicio {/*Titulo del servicio*/
-        color: #fff;
-        font-size: 18pt;
-        font-weight: 500;
-        margin-bottom: 10px;
-    }
-    .puntos {
-        padding: 1em;
-        height: 16vh;
-        margin: 1em;
-        background: linear-gradient(90deg, rgba(159,208,208,1) 0%, rgba(255,255,255,1) 30%, rgba(255,255,255,1) 70%, rgba(159,208,208,1) 100%);
-        width: 33vw;
-    }
-    .puntos-title {
-        font-size: 0.5em;
-    }
-    .puntos-text{
-        margin-top: 0;
-        margin-bottom: 0.5rem;
-        font-weight: 500;
-        line-height: 0.7;
-    }
-    .experiencia {
-        background: linear-gradient(90deg, rgba(0,129,130,1) 0%, rgba(0,0,0,0) 15%, rgba(0,0,0,0) 85%, rgba(0,129,130,1) 100%);
-        padding: 2em 1em 2em 1em;
-        margin: 15em 0 2em 0;
-    }
-    .titulo {
-        color: #fff;
-        font-size: 20pt;
-        font-weight: 600;
-    }
-    .texto {
-        color: #fff;
-        font-size: 12pt;
-        font-weight: 500;
+    .logo {
+        max-width: 150px;
     }
 
-    .resumen {
-        background: linear-gradient(90deg, rgba(0,129,130,1) 0%, rgba(0,0,0,0) 15%, rgba(0,0,0,0) 85%, rgba(0,129,130,1) 100%);
-        padding: 1em;
-        margin: 1em 0 1em 0;
+    .header {
+        display: flex;
+        background-color: #003260;
     }
-    .texto-r {
-        color: #fff;
-        font-size: 9pt;
-        font-weight: 500;
-    }
-    img{
+
+    #menu {
+        text-align: right;
         width: 100%;
-    }
-    .box {
-        margin-top: -10em;
-    z-index: 1;
-    margin-bottom: -11em;
-    }
-
-    .clientes{
-    background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(255,255,255,1) 25%, rgba(255,255,255,1) 75%, rgba(0,0,0,0) 100%);
-    padding: 3em;
-    }
- }
-
-/*/ `md` applies to small devices (landscape phones, less than 768px)*/
-@media (max-width: 767.98px) { 
-    .img-logo{
-        max-width: 200px;
-        width: 12vw;
-    }
-    
-    .titulo-servicio {/*Titulo del servicio*/
-        color: #fff;
-        font-size: 22pt;
-        font-weight: 600;
-        margin-bottom: 10px;
-    }
-    
-    .list-servicio {/*letras de los servicios*/
-        padding: 4px 4px;
-        font-size: 11pt;
-        font-weight: 500;
-    }
-
-    #list-services::before {/*icono para movil sm*/
-        content: "";
-        display: block;
-        background: url(../assets/img/imagenes/arrow-down-sm.png) no-repeat;
-        width: 30px;
-        height: 30px;
-        float: left;
-        margin-left: -3em;
-    }
-
-    .medios-bordes {
-        border-left: 3px solid #fff;
-        border-bottom: 3px solid #fff;
-        padding-left: 0;
-    }
-
-    .servicios {
-        background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(10,134,135,1) 100%);
-        margin-bottom: 15em;
-        margin-top: 7em;
+        justify-content: end;
     }
 
 
-    .puntos-title {
-        font-size: 13pt;
-        line-height: 16pt;
-    }
-    
-    .puntos {
-        padding: 1em;
-        height: 16vh;
-        margin: 1em;
-        background: linear-gradient(90deg, rgba(159,208,208,1) 0%, rgba(255,255,255,1) 30%, rgba(255,255,255,1) 70%, rgba(159,208,208,1) 100%);
-        width: 33vw;
-    }
-
-    .experiencia {
-        background: linear-gradient(90deg, rgba(0,129,130,1) 0%, rgba(0,0,0,0) 15%, rgba(0,0,0,0) 85%, rgba(0,129,130,1) 100%);
-        padding: 2em 1em 2em 1em;
-        margin: 15em 0 2em 0;
-    }
-
-    .titulo {
-        color: #fff;
-        font-size: 22pt;
-        font-weight: 600;
-    }
-
-    .texto {
-        color: #fff;
-        font-size: 15pt;
-        font-weight: 500;
-    }
-
-
-    .font-item{
-        color: #fff;
-        list-style:none;
-    } 
-    .puntos-text{
-        margin-top: 0;
-        margin-bottom: 0.5rem;
-        font-weight: 500;
-        line-height: 0.7;
-    }
-
-    .resumen {
-        background: linear-gradient(90deg, rgba(0,129,130,1) 0%, rgba(0,0,0,0) 15%, rgba(0,0,0,0) 85%, rgba(0,129,130,1) 100%);
-        padding: 1em 2em 1em 2em;
-        margin: 1em 0 1em 0;
-    }
-    .texto-r {
-        color: #fff;
-        font-size: 16pt;
-        font-weight: 600;
-    }
-    img{
-        width: 100%;
-    }
-    .box {
-        margin-top: -10em;
-    z-index: 1;
-    margin-bottom: -11em;
-    }
-
-    .clientes{
-    background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(255,255,255,1) 25%, rgba(255,255,255,1) 75%, rgba(0,0,0,0) 100%);
-    padding: 3em;
-    }
- }
-
-/*/ `lg` applies to medium devices (tablets, less than 992px)*/
-@media (max-width: 991.98px) { 
-    .img-logo{
-        max-width: 200px;
-        width: 12vw;
-    }
-    
-    .titulo-servicio {/*Titulo del servicio*/
-        color: #fff;
-        font-size: 33pt;
-        font-weight: 600;
-        margin-bottom: 10px;
-    }
-    
-    .list-servicio {/*letras de los servicios*/
-        padding: 4px 4px;
-        font-size: 14pt;
-        font-weight: 500;
-    }
-
-    #list-services::before {/*icono para movil sm*/
-        content: "";
-        display: block;
-        background: url(../assets/img/imagenes/arrow-down-sm.png) no-repeat;
-        width: 30px;
-        height: 30px;
-        float: left;
-        margin-left: -3em;
-    }
-
-    .medios-bordes {
-        border-left: 3px solid #fff;
-        border-bottom: 3px solid #fff;
-        padding-left: 0;
-    }
-
-    .servicios {
-        background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(10,134,135,1) 100%);
-        margin-bottom: 15em;
-        margin-top: 7em;
-    }
-
-
-    .puntos-title {
-        font-size: 13pt;
-        line-height: 16pt;
-    }
-    
-    .puntos {
-        padding: 2em;
-        height: 19vh;
-        margin: 1em;
-        background: linear-gradient(90deg, rgba(159,208,208,1) 0%, rgba(255,255,255,1) 30%, rgba(255,255,255,1) 70%, rgba(159,208,208,1) 100%);
-        width: 24vw;
-    }
-
-    .experiencia {
-        background: linear-gradient(90deg, rgba(0,129,130,1) 0%, rgba(0,0,0,0) 15%, rgba(0,0,0,0) 85%, rgba(0,129,130,1) 100%);
-        padding: 2em 1em 2em 1em;
-        margin: 10em 0 2em 0;
-    }
-
-    .titulo {
-        color: #fff;
-        font-size: 25pt;
-        font-weight: 600;
-    }
-
-    .texto {
-        color: #fff;
-        font-size: 19pt;
-        font-weight: 500;
-    }
-
-
-    .font-item{
-        color: #fff;
-        list-style:none;
-    } 
-    .puntos-text{
-        margin-top: 0;
-        margin-bottom: 0.5rem;
-        font-weight: 500;
-        line-height: 0.7;
-    }
-
-    .resumen {
-        background: linear-gradient(90deg, rgba(0,129,130,1) 0%, rgba(0,0,0,0) 15%, rgba(0,0,0,0) 85%, rgba(0,129,130,1) 100%);
-        padding: 1em 2em 1em 2em;
-        margin: 1em 0 1em 0;
-    }
-    .texto-r {
-        color: #fff;
-        font-size: 18pt;
-        font-weight: 600;
-    }
-    img{
-        width: 100%;
-    }
-    .box {
+   /*  #servicios-top {
+        background-image: url("../assets/img/backgrounds/top.png");
+        background-size: cover;
+        background-repeat: no-repeat;
         margin-top: -6em;
-        z-index: 1;
-        margin-bottom: -6em;
-    }
+    } */
 
-    .clientes{
-    background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(255,255,255,1) 25%, rgba(255,255,255,1) 75%, rgba(0,0,0,0) 100%);
-    padding: 3em;
-    }
- }
-
-/*/ `xl` applies to large devices (desktops, less than 1200px)*/
-@media (max-width: 1199.98px) { 
-    .img-logo{
-        max-width: 200px;
-        width: 9vw;
-    }
-    
-    .titulo-servicio {/*Titulo del servicio*/
-        color: #fff;
-        font-size: 35pt;
-        font-weight: 600;
-        margin-bottom: 10px;
-    }
-    
-    .list-servicio {/*letras de los servicios*/
-        padding: 4px 4px;
-        font-size: 19pt;
-        font-weight: 500;
-    }
-
-    #list-services::before {/*icono para movil sm*/
-        content: "";
-        display: block;
-        background: url(../assets/img/imagenes/arrow-down.png) no-repeat;
-        width: 50px;
-        height: 50px;
-        float: left;
-        margin-left: -4em;
-    }
-
-    .medios-bordes {
-        border-left: 3px solid #fff;
-        border-bottom: 3px solid #fff;
-        padding-left: 0;
-    }
-
-    .servicios {
-        background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(10,134,135,1) 100%);
-        margin-bottom: 15em;
-        margin-top: 7em;
-    }
-
-
-    .puntos-title {
-        font-size: 13pt;
-        line-height: 16pt;
-    }
-    
-    .puntos {
-        padding: 2em;
-        height: 19vh;
-        margin: 1em;
-        background: linear-gradient(90deg, rgba(159,208,208,1) 0%, rgba(255,255,255,1) 30%, rgba(255,255,255,1) 70%, rgba(159,208,208,1) 100%);
-        width: 24vw;
-    }
-
-    .experiencia {
-        background: linear-gradient(90deg, rgba(0,129,130,1) 0%, rgba(0,0,0,0) 15%, rgba(0,0,0,0) 85%, rgba(0,129,130,1) 100%);
-        padding: 2em 1em 2em 1em;
-        margin: 10em 0 2em 0;
+    #servicios-bottom {
+        background-image: url("../assets/img/backgrounds/bottom.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
     }
 
     .titulo {
-        color: #fff;
-        font-size: 25pt;
-        font-weight: 600;
+        font-size: calc(1.525rem + 2.3vw);
+        font-weight: 700;
     }
 
     .texto {
-        color: #fff;
-        font-size: 19pt;
+        font-size: calc(1.425rem + 1.1vw);
         font-weight: 500;
     }
 
-
-    .font-item{
-        color: #fff;
-        list-style:none;
-    } 
-    .puntos-text{
-        font-size: 21pt;
-        margin-top: 0;
-        margin-bottom: 0.5rem;
-        font-weight: 500;
-        line-height: 0.7;
+    .negro {
+        color: #000;
     }
 
-    .resumen {
-        background: linear-gradient(90deg, rgba(0,129,130,1) 0%, rgba(0,0,0,0) 15%, rgba(0,0,0,0) 85%, rgba(0,129,130,1) 100%);
-        padding: 1em 2em 1em 2em;
-        margin: 1em 0 1em 0;
-    }
-    .texto-r {
+    .blanco {
         color: #fff;
-        font-size: 18pt;
-        font-weight: 600;
     }
-    img{
+
+    .grad-puntos {
+        background: linear-gradient(90deg, rgba(0, 129, 130, 0.6) 0%, rgba(255, 255, 255, 1) 30%, rgba(255, 255, 255, 1) 70%, rgba(0, 129, 130, 0.6) 100%);
+    }
+
+    .rad-grad {
+        background: linear-gradient(90deg, rgba(0, 129, 130, 1) 0%, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0) 90%, rgba(0, 129, 130, 1) 100%);
+    }
+
+    img {
         width: 100%;
     }
-    .box {
+
+    .grad-clientes {
+        background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(255, 255, 255, 1) 20%, rgba(255, 255, 255, 1) 80%, rgba(0, 0, 0, 0) 100%);
+    }
+
+    .font-item {
+        list-style: none;
+    }
+
+
+
+    #footer {
+        font-size: 10pt;
+        color: white;
+        height: 4vh;
+        background-color: black;
+    }
+
+  
+
+    .imgServicios {
+        max-width: 80%;
+    }
+
+    /* // X-Small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up) */
+    @media (max-width: 767px) {
+        #servicios-top {
+        background-image: url("../assets/img/backgrounds/top.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-top: -20em;
+    }
+
+    .mvexp{
+        margin-top: 10em;
+    }
+
+    #cuadrito{
+            margin-top: -88%;
+    margin-bottom: -70%;
+    }
+
+        .contacto {
+            font-size: 16px;
+        }
+
+        .tituloServicios {
+            color: white;
+            font-size: 30px;
+            font-weight: bold;
+            padding-left: 40px;
+        }
+
+        .textoServicios {
+            color: white;
+            font-size: 15px;
+        }
+
+    }
+
+    /* // Medium devices (tablets, 768px and up) */
+    @media (min-width: 768px) {
+
+        #servicios-top {
+        background-image: url("../assets/img/backgrounds/top.png");
+        background-size: cover;
+        background-repeat: no-repeat;
         margin-top: -6em;
-        z-index: 1;
-        margin-bottom: -6em;
     }
+        #cuadrito{
+           margin-top: -28%;
+    margin-bottom: -10%;
+        }
+        .img-logo {
+            max-width: 200px;
+            width: 12vw;
+        }
 
-    .clientes{
-    background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(255,255,255,1) 25%, rgba(255,255,255,1) 75%, rgba(0,0,0,0) 100%);
-    padding: 3em;
-    }
- }
 
-/*/ `xxl` applies to x-large devices (large desktops, less than 1400px)*/
-@media (max-width: 1399.98px) { 
-    .img-logo{
-        max-width: 200px;
-        width: 9vw;
-    }
+        .list-servicio {
+            /*letras de los servicios*/
+            padding: 4px 4px;
+        }
+
+        #list-services::before {
+            /*icono para movil sm*/
+            content: "";
+            display: block;
+            background: url(../assets/img/imagenes/arrow-down-sm.png) no-repeat;
+            width: 30px;
+            height: 30px;
+            float: left;
+            margin-left: -3em;
+        }
+
+        .medios-bordes {
+            border-left: 4px solid #fff;
+            border-bottom: 4px solid #fff;
+            padding-left: 0;
+        }
+
+        .serviciox {
+            position: relative;
+            width: 15vw;
+            margin-top: -30vh;
+        }
+
+        .puntos {
+            padding: 1em 1.5em;
+            height: 28vh;
+            margin: 2.5em 1.5em;
+            width: 24vw;
+        }
+
+        .experiencia {
+            padding: 2em 10em 2em 10em;
+            margin: 15em 0 2em 0;
+        }
+
+        .titulo {
+            font-size: calc(1.525rem + 3.3vw);
+            /*40pt;*/
+            font-weight: 700;
+        }
+
+        .texto {
+            font-size: 25pt;
+            font-weight: 500;
+        }
+
+        .puntos-text {
+            line-height: 22pt;
+            padding: 1em 2.5em;
+        }
+
+        .resumen {
+            padding: 1em 6em 1em 6em;
+            margin: 1em 0 1em 0;
+        }
+
+        .box {
+            margin-top: -11em;
+            z-index: 1;
+            margin-bottom: -11em;
+        }
+
+        .clientes {
+            padding: 2em 8em;
+        }
+
     
-    .titulo-servicio {/*Titulo del servicio*/
-        color: #fff;
-        font-size: 35pt;
-        font-weight: 600;
-        margin-bottom: 10px;
+        .contacto {
+            font-size: 16px;
+        }
     }
-    
-    .list-servicio {/*letras de los servicios*/
-        padding: 4px 4px;
-        font-size: 19pt;
-        font-weight: 500;
-    }
-
-    #list-services::before {/*icono para movil sm*/
-        content: "";
-        display: block;
-        background: url(../assets/img/imagenes/arrow-down.png) no-repeat;
-        width: 50px;
-        height: 50px;
-        float: left;
-        margin-left: -4em;
-    }
-
-    .medios-bordes {
-        border-left: 3px solid #fff;
-        border-bottom: 3px solid #fff;
-        padding-left: 0;
-    }
-
-    .servicios {
-        background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(10,134,135,1) 100%);
-        margin-bottom: 15em;
-        margin-top: 7em;
-    }
-
-
-    .puntos-title {
-        font-size: 13pt;
-        line-height: 16pt;
-    }
-    
-    .puntos {
-        padding: 2em;
-        height: 19vh;
-        margin: 1em;
-        background: linear-gradient(90deg, rgba(159,208,208,1) 0%, rgba(255,255,255,1) 30%, rgba(255,255,255,1) 70%, rgba(159,208,208,1) 100%);
-        width: 24vw;
-    }
-
-    .experiencia {
-        background: linear-gradient(90deg, rgba(0,129,130,1) 0%, rgba(0,0,0,0) 15%, rgba(0,0,0,0) 85%, rgba(0,129,130,1) 100%);
-        padding: 2em 1em 2em 1em;
-        margin: 10em 0 2em 0;
-    }
-
-    .titulo {
-        color: #fff;
-        font-size: 25pt;
-        font-weight: 600;
-    }
-
-    .texto {
-        color: #fff;
-        font-size: 19pt;
-        font-weight: 500;
-    }
-
-
-    .font-item{
-        color: #fff;
-        list-style:none;
-    } 
-    .puntos-text{
-        font-size: 21pt;
-        margin-top: 0;
-        margin-bottom: 0.5rem;
-        font-weight: 500;
-        line-height: 0.7;
-    }
-
-    .resumen {
-        background: linear-gradient(90deg, rgba(0,129,130,1) 0%, rgba(0,0,0,0) 15%, rgba(0,0,0,0) 85%, rgba(0,129,130,1) 100%);
-        padding: 1em 2em 1em 2em;
-        margin: 1em 0 1em 0;
-    }
-    .texto-r {
-        color: #fff;
-        font-size: 18pt;
-        font-weight: 600;
-    }
-    img{
-        width: 100%;
-    }
-    .box {
-        margin-top: -6em;
-        z-index: 1;
-        margin-bottom: -6em;
-    }
-
-    .clientes{
-    background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(255,255,255,1) 25%, rgba(255,255,255,1) 75%, rgba(0,0,0,0) 100%);
-    padding: 3em;
-    }
- }
-
- @media (min-width: 1399.99px) { 
-    .img-logo{
-        max-width: 200px;
-        width: 6vw;
-    }
-    
-    .titulo-servicio {/*Titulo del servicio*/
-        color: #fff;
-        font-size: 35pt;
-        font-weight: 600;
-        margin-bottom: 10px;
-    }
-    
-    .list-servicio {/*letras de los servicios*/
-        padding: 4px 4px;
-        font-size: 19pt;
-        font-weight: 500;
-    }
-
-    #list-services::before {/*icono para movil sm*/
-        content: "";
-        display: block;
-        background: url(../assets/img/imagenes/arrow-down.png) no-repeat;
-        width: 50px;
-        height: 50px;
-        float: left;
-        margin-left: -4em;
-    }
-
-    .medios-bordes {
-        border-left: 3px solid #fff;
-        border-bottom: 3px solid #fff;
-        padding-left: 0;
-    }
-
-    .servicios {
-        background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(10,134,135,1) 100%);
-        margin-bottom: 15em;
-        margin-top: 7em;
-    }
-
-
-    .puntos-title {
-        font-size: 13pt;
-        line-height: 16pt;
-    }
-    
-    .puntos {
-        padding: 3em;
-    height: 15vh;
-    margin: 2em;
-    background: linear-gradient(90deg, rgba(159,208,208,1) 0%, rgba(255,255,255,1) 30%, rgba(255,255,255,1) 70%, rgba(159,208,208,1) 100%);
-    width: 23vw;
-    }
-
-    .experiencia {
-        background: linear-gradient(90deg, rgba(0,129,130,1) 0%, rgba(0,0,0,0) 15%, rgba(0,0,0,0) 85%, rgba(0,129,130,1) 100%);
-        padding: 2em 1em 2em 1em;
-        margin: 10em 0 2em 0;
-    }
-
-    .titulo {
-        color: #fff;
-        font-size: 25pt;
-        font-weight: 600;
-    }
-
-    .texto {
-        color: #fff;
-        font-size: 19pt;
-        font-weight: 500;
-    }
-
-
-    .font-item{
-        color: #fff;
-        list-style:none;
-    } 
-    .puntos-text{
-        font-size: 21pt;
-        margin-top: 0;
-        margin-bottom: 0.5rem;
-        font-weight: 500;
-        line-height: 0.7;
-    }
-
-    .resumen {
-        background: linear-gradient(90deg, rgba(0,129,130,1) 0%, rgba(0,0,0,0) 15%, rgba(0,0,0,0) 85%, rgba(0,129,130,1) 100%);
-        padding: 1em 2em 1em 2em;
-        margin: 1em 0 1em 0;
-    }
-    .texto-r {
-        color: #fff;
-        font-size: 18pt;
-        font-weight: 600;
-    }
-    img{
-        width: 100%;
-    }
-    .box {
-        margin-top: -7em;
-        z-index: 1;
-        margin-bottom: -7em;
-    }
-
-    .clientes{
-    background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(255,255,255,1) 25%, rgba(255,255,255,1) 75%, rgba(0,0,0,0) 100%);
-    padding: 3em;
-    }
-  }
 </style>

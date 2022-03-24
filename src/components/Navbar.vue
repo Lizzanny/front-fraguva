@@ -20,12 +20,17 @@
                                 Servicios
                             </router-link>
                         </li>
-                        <li class="nav-item"  v-show="usuario.name==''">
+                        <li class="nav-item"  v-show="usuario.name==null">
                             <router-link to="/login" class="nav-link">
                                 Log In
                             </router-link>
                         </li>
-                        <li class="nav-item dropdown" v-show="usuario.name!=''">
+                        <li class="nav-item " v-show="!!usuario.name">
+                            <router-link to="/bolsa" class="nav-link">
+                                Bolsa de trabajo
+                            </router-link>
+                        </li>
+                        <li class="nav-item dropdown" v-show="!!usuario.name">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 {{usuario.name}}
                             </a>
@@ -44,28 +49,41 @@
 </template>
 <script>
 export default {
-  data(){
-      return {
-        usuario:{
-            name:""
+    data(){
+        return {
+          usuario:{
+              name:null
+          }
         }
-      }
-  },
-  methods:{
-      getDataUser(){
-        this.usuario = JSON.parse(localStorage.getItem("user"));
-      },
-      cerrarSesion(){
-        console.log("cerrar sesion");
-        //vaciar local storage
-        localStorage.removeItem('user');
-        window.location.href="/interior";
-        //this.$router.push('/')
-      }
-  },
-  mounted(){
-      this.getDataUser();
-  }
+    },
+    methods:{
+        showAlert() {
+          // Use sweetalert2
+            this.$swal({
+                position: 'center',
+                icon: 'success',
+                title: '¡Hasta pronto!',
+                showConfirmButton: false,
+                timer: 1500,
+
+            });
+        },
+        getDataUser(){
+          this.usuario = JSON.parse(localStorage.getItem("user"));
+        },
+        cerrarSesion(){
+          //vaciar local storage
+          this.showAlert();
+          localStorage.removeItem('user');
+          this.usuario.name ="";
+          window.location.href="/";
+          //this.$router.push('/')
+        }
+    },
+    
+    mounted(){
+        this.getDataUser();
+    }
 }
 </script>
 <style scoped>

@@ -54,7 +54,7 @@ export default {
         showAlert() {
           // Use sweetalert2
           this.$swal({
-              position: 'top-end',
+              position: 'top-center',
               icon: 'warning',
               title: 'Usuario o contraseña incorrectos',
               showConfirmButton: false,
@@ -69,7 +69,7 @@ export default {
             this.loading=true;
             this.axios.post('/users/login', this.signin).then(({data, status})=>{
                 if(status===200){
-                    window.location.href="/interior";
+                    window.location.href="/bolsa";
                     this.setUserLocalStorage(data);
                 }
             }).catch((error)=>this.showAlert()); 

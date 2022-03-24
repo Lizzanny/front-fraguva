@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <div id="container1" class="container-fluid pb-5">
-        <div class="">
+        <div class=" pt-5 mt-5">
             <div class="row justify-content-md-center justify-content-lg-center">
                 <div class="col-md-11">
                     <img src="../assets/img/imagenes/SLOGAN.png" id="imgslogan">
@@ -70,9 +70,10 @@ export default {
     
 
     body {
-        margin: 0;
-        padding: 0;
+    margin: 0;
+    padding: 0;
     }
+
 
     #container1 {
         background-image: url("../assets/img/backgrounds/FONDO_PARTE_ARRIBA.png");
@@ -92,6 +93,7 @@ export default {
         margin-top: 30em;
         max-width: 60%;
     }
+
 
     .style {
         background: rgb(0, 0, 0);
@@ -122,7 +124,7 @@ export default {
     #visionspan {
         font-size: 28px;
         margin-left: 21px;
-        
+
     }
 
     #titulomision {
@@ -143,7 +145,6 @@ export default {
     #misionspan {
         font-size: 28px;
         margin-left: 21px;
-        
         max-width: 1200px;
     }
 
@@ -159,47 +160,48 @@ export default {
 
 
 
-    /* MEDIA QUERYS MOBILE */
+/* MEDIA QUERYS MOBILE */
 
-    @media (max-width: 600px) {
-        #container1 {
+@media (max-width: 600px) {
+    #container1 {
             background-image: url("../assets/img/backgrounds/FONDO_PARTE_ARRIBA.png");
             background-size:cover;
             background-repeat: no-repeat;
             margin-top: -16em;
-        }
-        #imgslogan {
-            max-width: 100%;
-        }
-
-        .contacto {
-            font-size: 16px;
-        }
-
-        #titulomision {
-            font-size: 30px;
-        }
-
-        #mision {
-            width: auto;
-        }
-
-        #vision {
-            width: auto;
-        }
-
-        #misionspan {
-            font-size: 16px;
-            text-align: left;
-        }
-
-        #titulovision {
-            font-size: 30px;
-        }
-
-        #visionspan {
-            font-size: 16px;
-            text-align: left;
-        }
     }
+
+    #imgslogan {
+        max-width: 100%;
+    }
+    
+    .contacto {
+        font-size: 16px;
+    }
+
+    #titulomision {
+        font-size: 30px;
+    }
+
+    #mision {
+        width: auto;
+    }
+
+    #vision {
+        width: auto;
+    }
+
+    #misionspan {
+        font-size: 16px;
+        text-align: left;
+    }
+
+    #titulovision {
+        font-size: 30px;
+    }
+
+    #visionspan {
+        font-size: 16px;
+        text-align: left;
+    }
+}
 </style>
