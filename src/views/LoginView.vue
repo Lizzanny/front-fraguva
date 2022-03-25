@@ -2,8 +2,8 @@
     <div class="login container-fluid imgbackground">
         <div class="container-fluid vh-100" style="margin-top:300px">
             <div class="" style="margin-top:200px">
-                <div class="rounded d-flex justify-content-center">
-                    <div class="col-md-4 col-sm-12 shadow-lg p-5 bg-light formulario">
+                <div class="d-flex justify-content-center">
+                    <div class="col-md-4 col-sm-12 shadow-lg p-5 bg-light formulario rounded-3">
                         
                         <div class="text-center">
                             <img src="../assets/img/Icon/user.png" class="img-fluid" alt="">
