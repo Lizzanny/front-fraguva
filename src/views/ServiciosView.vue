@@ -1,6 +1,6 @@
 <template>
-  <div class="servicios container-fluid" id="servicios-top">
-    
+  <div class="servicios" >
+    <div class="container-fluid" id="servicios-top">
         <div class="row justify-content-evenly">
             <div class="col-4 d-none d-sm-block"></div>
             <div class="col-4 d-none d-sm-block mt-15 pt-4 pb-4 bgServicios">
@@ -45,9 +45,9 @@
             </div>
         </div>
         
-  
+    </div>
 
-    <div class="container-fluid" id="cuadrito">
+    <div class="container-fluid" id="cuadrito" >
         <div class="row pt-5 mt-5">
             <div class="col d-none d-sm-block">
                 <img src="../assets/img/imagenes/serviciosEscritorio.png" class="rounded mx-auto d-block imgServicios" alt=""
@@ -131,6 +131,7 @@ export default {
 </script>
 
 <style scoped>
+    
 body {
         margin: 0;
         padding: 0;
@@ -170,6 +171,7 @@ body {
         background: rgb(21, 125, 115);
         background: linear-gradient(90deg, rgba(21, 125, 115, 0.5410539215686274) 0%, rgba(21, 125, 115, 0) 10%, rgba(21, 125, 115, 0) 92%, rgba(21, 125, 115, 0.5410539215686274) 100%);
             margin-top: 12em;
+            margin-bottom: 8vh;
     }
 
     .bgClientes {
@@ -177,12 +179,6 @@ body {
         background: radial-gradient(circle, rgba(255, 255, 255, 0.9192051820728291) 87%, rgba(21, 125, 115, 0) 100%);
     }
 
-    .bgServicios {
-        background: rgb(19, 24, 30);
-        background: linear-gradient(90deg, rgba(19, 24, 30, 0) 46%, rgba(21, 124, 126, 1) 100%);
-            margin-top: 13em;
-            margin-bottom: 24em;
-    }
 
     .header {
         display: flex;
@@ -286,6 +282,13 @@ body {
 
 // Small devices (landscape phones, 576px and up) */
     @media (max-width: 767px) {
+        .bgServicios {
+        background: rgb(19, 24, 30);
+        background: linear-gradient(90deg, rgba(19, 24, 30, 0) 46%, rgba(21, 124, 126, 1) 100%);
+            margin-top: 23em;
+            margin-bottom: 24em;
+    }
+
         #servicios-top {
         background-image: url("../assets/img/backgrounds/top.png");
         background-size: cover;
@@ -298,8 +301,9 @@ body {
     }
 
     #cuadrito{
-            margin-top: -88%;
-    margin-bottom: -70%;
+        margin-top: -88%;
+        margin-bottom: -60%;
+        /* background-color: #000e35; */
     }
 
         .contacto {
@@ -323,6 +327,13 @@ body {
     /* // Medium devices (tablets, 768px and up) */
     @media (min-width: 768px) {
 
+        .bgServicios {
+        background: rgb(19, 24, 30);
+        background: linear-gradient(90deg, rgba(19, 24, 30, 0) 46%, rgba(21, 124, 126, 1) 100%);
+            margin-top: 13em;
+            margin-bottom: 24em;
+    }
+
         #servicios-top {
         background-image: url("../assets/img/backgrounds/top.png");
         background-size: cover;
@@ -330,8 +341,9 @@ body {
         margin-top: -6em;
     }
         #cuadrito{
-           margin-top: -28%;
-    margin-bottom: -10%;
+            margin-top: -22%;
+            margin-bottom: -10%;
+            /* background-color: #000e35; */
         }
         .img-logo {
             max-width: 200px;

@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <div id="container1" class="container-fluid pb-5">
-        <div class=" pt-5 mt-5">
+        <div class="">
             <div class="row justify-content-md-center justify-content-lg-center">
                 <div class="col-md-11">
                     <img src="../assets/img/imagenes/SLOGAN.png" id="imgslogan">
