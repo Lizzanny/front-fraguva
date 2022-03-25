@@ -1,9 +1,8 @@
 <template>
   <div class="servicios" >
     <div class="container-fluid" id="servicios-top">
-        <div class="row justify-content-evenly">
-            <div class="col-4 d-none d-sm-block"></div>
-            <div class="col-4 d-none d-sm-block mt-15 pt-4 pb-4 bgServicios">
+        <div class="row justify-content-end">
+            <div class="col-md-8 col-lg-6 d-none d-sm-block mt-15 pt-4 pb-4 bgServicios">
                 <p class="tituloServicios">SERVICIOS</p>
                 <ul class="medios-bordes font-item textoServicios">
                     <li class="m-3">ADMINISTRACIÓN DE CONTRATOS PETROLEROS</li>
@@ -24,7 +23,7 @@
             </div>
         </div>
         <div class="row" >
-            <div class="col d-block d-sm-none bgServicios pt-4 pb-4 ml-4 mr-4 ">
+            <div class="col-xs-10 col-sm-6 d-block d-sm-none bgServicios pt-4 pb-4 ml-4 mr-4 ">
                 <p class="tituloServicios">SERVICIOS</p>
                 <ul class="medios-bordes font-item textoServicios">
                     <li class="m-2">ADMINISTRACIÓN DE CONTRATOS PETROLEROS</li>
@@ -48,10 +47,9 @@
     </div>
 
     <div class="container-fluid" id="cuadrito" >
-        <div class="row pt-5 mt-5">
-            <div class="col d-none d-sm-block">
-                <img src="../assets/img/imagenes/serviciosEscritorio.png" class="rounded mx-auto d-block imgServicios" alt=""
-                    style="max-width: 70%;">
+        <div class="row pt-5 mt-5 d-flex justify-content-center">
+            <div class="col-md-10 col-lg-9 d-none d-sm-block">
+                <img src="../assets/img/imagenes/serviciosEscritorio.png" class="rounded mx-auto d-block imgServicios" alt="">
             </div>
             <div class="col d-block d-sm-none pb-5">
                 <img src="../assets/img/imagenes/servciosMobile.png" class="img-fluid" alt="">
@@ -132,7 +130,7 @@ export default {
 
 <style scoped>
     
-body {
+    body {
         margin: 0;
         padding: 0;
         background-color: #003260;
@@ -147,7 +145,7 @@ body {
 
     .textoServicios {
         color: white;
-        font-size: 25px;
+        font-size: 30px;
     }
 
     .tituloExperiencia {
@@ -209,14 +207,6 @@ body {
         justify-content: end;
     }
 
-
-   /*  #servicios-top {
-        background-image: url("../assets/img/backgrounds/top.png");
-        background-size: cover;
-        background-repeat: no-repeat;
-        margin-top: -6em;
-    } */
-
     #servicios-bottom {
         background-image: url("../assets/img/backgrounds/bottom.png");
         background-size: cover;
@@ -262,8 +252,6 @@ body {
         list-style: none;
     }
 
-
-
     #footer {
         font-size: 10pt;
         color: white;
@@ -271,29 +259,25 @@ body {
         background-color: black;
     }
 
-  
-
-    .imgServicios {
-        max-width: 80%;
-    }
 
     /* // X-Small devices (portrait phones, less than 576px)
-// No media query for `xs` since this is the default in Bootstrap
+    // No media query for `xs` since this is the default in Bootstrap
 
-// Small devices (landscape phones, 576px and up) */
+    // Small devices (landscape phones, 576px and up) */
     @media (max-width: 767px) {
         .bgServicios {
-        background: rgb(19, 24, 30);
-        background: linear-gradient(90deg, rgba(19, 24, 30, 0) 46%, rgba(21, 124, 126, 1) 100%);
+            background: rgb(19, 24, 30);
+            background: linear-gradient(90deg, rgba(19, 24, 30, 0) 46%, rgba(21, 124, 126, 1) 100%);
             margin-top: 23em;
             margin-bottom: 24em;
-    }
+        }
 
         #servicios-top {
-        background-image: url("../assets/img/backgrounds/top.png");
-        background-size: cover;
-        background-repeat: no-repeat;
-        margin-top: -20em;
+            background-image: url("../assets/img/backgrounds/top.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin-top: -20em;
+            height: 180vh;
     }
 
     .mvexp{
@@ -301,8 +285,8 @@ body {
     }
 
     #cuadrito{
-        margin-top: -88%;
-        margin-bottom: -60%;
+        margin-top: -70%;
+    margin-bottom: -60%;
         /* background-color: #000e35; */
     }
 
@@ -324,6 +308,22 @@ body {
 
     }
 
+
+    @media (min-width: 767px) and (max-width: 991px) {
+        #cuadrito{
+                margin-top: -45%;
+            margin-bottom: -10%;
+        }
+    }
+
+    @media (min-width: 992px) {
+        #cuadrito{
+                margin-top: -50%;
+            margin-bottom: -10%;
+        }
+    }
+
+
     /* // Medium devices (tablets, 768px and up) */
     @media (min-width: 768px) {
 
@@ -339,12 +339,9 @@ body {
         background-size: cover;
         background-repeat: no-repeat;
         margin-top: -6em;
+        height: 250vh;
     }
-        #cuadrito{
-            margin-top: -22%;
-            margin-bottom: -10%;
-            /* background-color: #000e35; */
-        }
+
         .img-logo {
             max-width: 200px;
             width: 12vw;

@@ -2,14 +2,14 @@
     <div class="container-fluid">
         <footer>
             <div class="row justify-content-center align-items-center" id="aviso">
-                <div class="col-10 col-sm-5 col-md-4 col-lg-4 col-xl-4 text-center">
+                <div class="col-xs-10 col-sm-8 col-md-6 col-lg-4 col-xl-4 text-center">
                     <button class="aviso" data-bs-toggle="modal" data-bs-target="#myModal">AVISO DE PRIVACIDAD</button>
                 </div>
             </div>
-            <div class="row py-3" id="footer">
-               
+            <div class="row py-3 justify-content-center align-items-center" id="footer">
+                <div class="col-xs-10 col-sm-8 col-md-8 col-lg-4 col-xl-4">
                     <h4 class="copy text-center mb-0">COPYRIGHT © 2022 | FRAGUVA ENERGY</h4>
-                
+                </div>
             </div>
         </footer>
         <Modal/>
@@ -81,4 +81,13 @@ export default {
         background-color: black;
     }
 }
+
+@media (min-width: 767px) and (max-width: 973px) {
+    .aviso {
+        padding: 2px 30px 
+    }
+}
+
+
+
 </style>

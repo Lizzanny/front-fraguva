@@ -3,21 +3,21 @@
         <div class="container-fluid vh-100" style="margin-top:300px">
             <div class="" style="margin-top:200px">
                 <div class="d-flex justify-content-center">
-                    <div class="col-md-4 col-sm-12 shadow-lg p-5 bg-light formulario rounded-3">
+                    <div class="col-xs-12 col-sm-10 col-md-5 col-lg-4  shadow-lg p-5 bg-light formulario rounded-3">
                         
-                        <div class="text-center">
+                        <div class="text-center mb-4">
                             <img src="../assets/img/Icon/user.png" class="img-fluid" alt="">
                             <h1 class="text-dark">Login</h1>
                         </div>
                         <form action="">
-                            <div class="p-4">
+                            <div class="text-center">
                                 
-                                <div class="input-group mb-3">
+                                <div class="input-group mb-4">
                                     <span class="input-group-text"><i class="uil uil-user"></i></span>
                                     <input type="text" class="form-control" placeholder="Usuario" id="txtuser"
                                             v-model="signin.username">
                                 </div>
-                                <div class="input-group mb-3">
+                                <div class="input-group mb-4">
                                     <span class="input-group-text"><i class="uil uil-key-skeleton"></i></span>
                                     <input type="password" class="form-control" placeholder="Contraseña"
                                         id="txtpass" v-model="signin.password">
@@ -101,6 +101,8 @@ export default {
         .imgbackground{
             background-image: url('../assets/img/backgrounds/FONDO_PARTE_ARRIBA.png');
             margin-top: -38em;
+                height: 125vh;
+
         }
 
         .formulario{
