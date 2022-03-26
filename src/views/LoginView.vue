@@ -9,7 +9,7 @@
                             <img src="../assets/img/Icon/user.png" class="img-fluid" alt="">
                             <h1 class="text-dark">Login</h1>
                         </div>
-                        <form action="">
+                        <form action="" v-on:submit.prevent="login">
                             <div class="text-center">
                                 
                                 <div class="input-group mb-4">

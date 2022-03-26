@@ -20,19 +20,19 @@
                                 Servicios
                             </router-link>
                         </li>
-                        <li class="nav-item"  v-show="usuario.name==null">
+                        <li class="nav-item"  v-if="existe">
                             <router-link to="/login" class="nav-link">
                                 Log In
                             </router-link>
                         </li>
-                        <li class="nav-item " v-show="!!usuario.name">
+                        <li class="nav-item " v-if="!existe">
                             <router-link to="/bolsa" class="nav-link">
                                 Bolsa de trabajo
                             </router-link>
                         </li>
-                        <li class="nav-item dropdown" v-show="!!usuario.name">
+                        <li class="nav-item dropdown" v-if="!existe">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                {{usuario.name}}
+                               {{usuario.name}}
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                               <li><hr class="dropdown-divider"></li>
@@ -51,9 +51,10 @@
 export default {
     data(){
         return {
-          usuario:{
-              name:null
-          }
+            existe:false,
+            usuario:{
+                name:""
+            }
         }
     },
     methods:{
@@ -69,14 +70,22 @@ export default {
             });
         },
         getDataUser(){
+            this.existe = true;
           this.usuario = JSON.parse(localStorage.getItem("user"));
+          if(this.usuario == null){
+              this.usuario= {
+                name:""
+            };
+          }
+          console.log(this.usuario);
         },
         cerrarSesion(){
           //vaciar local storage
           this.showAlert();
           localStorage.removeItem('user');
-          this.usuario.name ="";
+          this.existe = false;
           window.location.href="/";
+
           //this.$router.push('/')
         }
     },
