@@ -20,17 +20,17 @@
                                 Servicios
                             </router-link>
                         </li>
-                        <li class="nav-item"  v-if="existe">
+                        <li class="nav-item"  v-if="usuario.name==''">
                             <router-link to="/login" class="nav-link">
                                 Log In
                             </router-link>
                         </li>
-                        <li class="nav-item " v-if="!existe">
+                        <li class="nav-item " v-if="!!usuario.name">
                             <router-link to="/bolsa" class="nav-link">
                                 Bolsa de trabajo
                             </router-link>
                         </li>
-                        <li class="nav-item dropdown" v-if="!existe">
+                        <li class="nav-item dropdown" v-if="!!usuario.name">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                {{usuario.name}}
                             </a>
@@ -51,7 +51,6 @@
 export default {
     data(){
         return {
-            existe:false,
             usuario:{
                 name:""
             }
@@ -70,7 +69,6 @@ export default {
             });
         },
         getDataUser(){
-            this.existe = true;
           this.usuario = JSON.parse(localStorage.getItem("user"));
           if(this.usuario == null){
               this.usuario= {
@@ -83,7 +81,9 @@ export default {
           //vaciar local storage
           this.showAlert();
           localStorage.removeItem('user');
-          this.existe = false;
+          this.usuario = {
+                name:""
+            };
           window.location.href="/";
 
           //this.$router.push('/')
