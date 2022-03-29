@@ -1,18 +1,27 @@
 <template lang="">
+<Navbar/>
+
     <div class="inicial">
     </div>
 </template>
 <script>
+import Navbar from '../components/Navbar.vue'
+
 export default {
-    beforeCreate() {
-       let usuario = JSON.parse(localStorage.getItem("user"));
+    components: {
+        Navbar,
+    },
+    /* beforeCreate() {
+        let usuario = JSON.parse(localStorage.getItem("user"));
         if(usuario==null){
             console.log('no logueado');
-            window.location.href="/";
+            this.$router.push('/')
         }else{
-               console.log(' logueado');
+            console.log(' logueado');
+            //console.log(usuario );
         }
-    },
+        
+    }, */
 }
 </script>
 <style scoped>
@@ -21,6 +30,6 @@ export default {
     }
     .inicial{
         background-color: black;
-        margin-top: -18em;
+        margin-top: -23em;
     }
 </style>

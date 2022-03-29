@@ -20,14 +20,14 @@
                                 Servicios
                             </router-link>
                         </li>
+                        <li class="nav-item">
+                            <router-link to="/bolsa" class="nav-link">
+                                Bolsa de trabajo
+                            </router-link>
+                        </li>
                         <li class="nav-item"  v-if="usuario.name==''">
                             <router-link to="/login" class="nav-link">
                                 Log In
-                            </router-link>
-                        </li>
-                        <li class="nav-item " v-if="!!usuario.name">
-                            <router-link to="/bolsa" class="nav-link">
-                                Bolsa de trabajo
                             </router-link>
                         </li>
                         <li class="nav-item dropdown" v-if="!!usuario.name">
@@ -35,7 +35,6 @@
                                {{usuario.name}}
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                              <li><hr class="dropdown-divider"></li>
                               <li><a class="dropdown-item" href="#" @click="cerrarSesion">Log Out</a></li>
                             </ul>
                         </li>
@@ -75,7 +74,7 @@ export default {
                 name:""
             };
           }
-          console.log(this.usuario);
+          /* console.log(this.usuario); */
         },
         cerrarSesion(){
           //vaciar local storage
@@ -87,6 +86,10 @@ export default {
           window.location.href="/";
 
           //this.$router.push('/')
+        },
+        updStatusNav(datos){
+            //console.log(datos);
+            this.usuario.name=datos.name;
         }
     },
     

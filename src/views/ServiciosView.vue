@@ -1,4 +1,5 @@
-<template>
+<template lang="">
+<Navbar/>
   <div class="servicios" >
     <div class="container-fluid" id="servicios-top">
         <div class="row justify-content-end">
@@ -121,7 +122,11 @@
 </template>
 
 <script>
+import Navbar from '../components/Navbar.vue'
 export default {
+    components: {
+        Navbar,
+    },
   methods:{
     
   }
@@ -276,7 +281,7 @@ export default {
             background-image: url("../assets/img/backgrounds/top.png");
             background-size: cover;
             background-repeat: no-repeat;
-            margin-top: -20em;
+            margin-top: -23em;
             height: 180vh;
     }
 

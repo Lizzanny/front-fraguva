@@ -1,4 +1,7 @@
+
 <template lang="">
+    <Navbar ref="navstatus"/>
+
     <div class="login container-fluid imgbackground">
         <div class="container-fluid vh-100" style="margin-top:300px">
             <div class="" style="margin-top:200px">
@@ -40,9 +43,12 @@
     </div>
 </template>
 <script>
-
+import Navbar from '../components/Navbar.vue'
 export default {
     name:'Login',
+    components: {
+        Navbar,
+    },
     data(){
         return {
             signin:{
@@ -71,14 +77,17 @@ export default {
             this.loading=true;
             this.axios.post('/users/login', this.signin).then(({data, status})=>{
                 if(status===200){
-                    window.location.href="/bolsa";
                     this.setUserLocalStorage(data);
+                    //window.location.href="./bolsa";
+                    this.$refs.navstatus.updStatusNav(data);
+                    this.$router.push('/')
                 }
             }).catch((error)=>this.showAlert()); 
             
             this.loading=false;
          
-        }
+        }, 
+       
     }
 }
 </script>

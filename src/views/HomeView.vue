@@ -1,4 +1,5 @@
-<template>
+<template lang="">
+<Navbar/>
   <div class="home">
     <div id="container1" class="container-fluid pb-5">
         <div class="">
@@ -60,10 +61,12 @@
 <script>
 // @ is an alias to /src
 
+    import Navbar from '../components/Navbar.vue'
 export default {
   name: 'HomeView',
   components: {
-  }
+        Navbar,
+    },
 }
 </script>
 <style scoped>
@@ -167,7 +170,7 @@ export default {
             background-image: url("../assets/img/backgrounds/FONDO_PARTE_ARRIBA.png");
             background-size:cover;
             background-repeat: no-repeat;
-            margin-top: -16em;
+            margin-top: -23em;
     }
 
     #imgslogan {
